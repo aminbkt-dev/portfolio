@@ -214,7 +214,7 @@ function HeroSection({ scrollTo }) {
           <div>
             <div className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 text-xs font-semibold px-3.5 py-1.5 rounded-full mb-8 tracking-wide">
               <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full" />
-              Disponible pour missions freelance &mdash; Data / BI / Analytics Engineering
+              Disponible pour missions freelance et opportunit&eacute;s CDI &mdash; Data / BI / Analytics Engineering
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-[1.15] tracking-tight mb-4">
