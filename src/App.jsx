@@ -281,7 +281,10 @@ function HeroSection({ scrollTo }) {
                   <span className="text-xs text-slate-300">&rarr;</span>
                   <span className="text-xs font-semibold px-2 py-1 rounded-lg border bg-blue-50 text-blue-700 border-blue-200">PostgreSQL</span>
                   <span className="text-xs text-slate-300">&rarr;</span>
-                  <span className="text-xs font-semibold px-2 py-1 rounded-lg border bg-violet-50 text-violet-700 border-violet-200">Metabase</span>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs font-semibold px-2 py-1 rounded-lg border bg-yellow-50 text-yellow-700 border-yellow-200">Power BI</span>
+                    <span className="text-xs font-semibold px-2 py-1 rounded-lg border bg-violet-50 text-violet-700 border-violet-200">Metabase</span>
+                  </div>
                 </div>
               </div>
 
@@ -328,7 +331,10 @@ function HeroSection({ scrollTo }) {
                   <span className="text-sm font-light text-slate-300">→</span>
                   <span className="text-xs font-semibold px-2.5 py-1 rounded-lg border bg-blue-50 text-blue-700 border-blue-200">PostgreSQL</span>
                   <span className="text-sm font-light text-slate-300">→</span>
-                  <span className="text-xs font-semibold px-2.5 py-1 rounded-lg border bg-violet-50 text-violet-700 border-violet-200">Metabase</span>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-lg border bg-yellow-50 text-yellow-700 border-yellow-200">Power BI</span>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-lg border bg-violet-50 text-violet-700 border-violet-200">Metabase</span>
+                  </div>
                 </div>
               </div>
 
@@ -622,7 +628,11 @@ const SOURCES = [
 const PIPELINE = [
   { label: 'n8n', sub: 'ETL & transformation JS', color: 'bg-orange-50 border-orange-200 text-orange-800' },
   { label: 'PostgreSQL / Supabase', sub: 'Entrepôt analytique', color: 'bg-blue-50 border-blue-200 text-blue-800' },
-  { label: 'Metabase', sub: 'Dashboards & KPI', color: 'bg-violet-50 border-violet-200 text-violet-800' },
+];
+
+const BI_OUTPUTS = [
+  { label: 'Power BI', sub: 'Dashboards & KPI', color: 'bg-yellow-50 border-yellow-200 text-yellow-800' },
+  { label: 'Metabase', sub: 'Dashboards web', color: 'bg-violet-50 border-violet-200 text-violet-800' },
 ];
 
 const DASHBOARD_PAGES = [
@@ -789,6 +799,17 @@ function AmeOSSection({ scrollTo }) {
                     </div>
                   </React.Fragment>
                 ))}
+                <span className="text-slate-300 text-xl flex-shrink-0">&rarr;</span>
+                <div className="flex flex-col gap-2 flex-shrink-0">
+                  {BI_OUTPUTS.map((tool) => (
+                    <div key={tool.label} className="flex flex-col items-center text-center gap-1">
+                      <span className={`text-xs font-bold px-3 py-1.5 rounded-lg border whitespace-nowrap ${tool.color}`}>
+                        {tool.label}
+                      </span>
+                      <span className="text-xs text-slate-400 max-w-[90px] leading-tight">{tool.sub}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
