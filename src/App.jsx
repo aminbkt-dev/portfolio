@@ -877,7 +877,7 @@ function AmeOSSection({ scrollTo }) {
             Structure du dashboard analytique
           </h3>
           <p className="text-slate-500 text-sm leading-relaxed mb-10 max-w-2xl">
-            Le syst&egrave;me alimente un dashboard analytique <strong className="text-slate-700">Metabase</strong> structur&eacute; en plusieurs pages, permettant d&apos;analyser l&apos;activit&eacute; &agrave; diff&eacute;rents niveaux&nbsp;: global, par collection, par produit et par co&ucirc;t. Le syst&egrave;me a &eacute;t&eacute; initialement d&eacute;velopp&eacute; sous Power BI (8 pages) avant d&apos;&ecirc;tre migr&eacute; vers Metabase pour un acc&egrave;s web, un partage simplifi&eacute; et un rafra&icirc;chissement automatique des donn&eacute;es.
+            J&apos;ai d&apos;abord con&ccedil;u un dashboard <strong className="text-slate-700">Power BI</strong> structur&eacute; en 8 pages, permettant d&apos;analyser l&apos;activit&eacute; &agrave; diff&eacute;rents niveaux&nbsp;: global, par collection, par produit et par co&ucirc;t. Ce syst&egrave;me m&apos;a permis de piloter concr&egrave;tement la performance &mdash; rentabilit&eacute;, co&ucirc;ts, retours &mdash; avec des indicateurs fiables et exploitables. J&apos;ai ensuite fait &eacute;voluer le syst&egrave;me vers <strong className="text-slate-700">Metabase</strong> pour un acc&egrave;s web, un partage simplifi&eacute; et un rafra&icirc;chissement automatique des donn&eacute;es.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
