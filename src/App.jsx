@@ -281,7 +281,7 @@ function HeroSection({ scrollTo }) {
                   <span className="text-xs text-slate-300">&rarr;</span>
                   <span className="text-xs font-semibold px-2 py-1 rounded-lg border bg-blue-50 text-blue-700 border-blue-200">PostgreSQL</span>
                   <span className="text-xs text-slate-300">&rarr;</span>
-                  <span className="text-xs font-semibold px-2 py-1 rounded-lg border bg-yellow-50 text-yellow-700 border-yellow-200">Power BI</span>
+                  <span className="text-xs font-semibold px-2 py-1 rounded-lg border bg-violet-50 text-violet-700 border-violet-200">Metabase</span>
                 </div>
               </div>
 
@@ -328,7 +328,7 @@ function HeroSection({ scrollTo }) {
                   <span className="text-sm font-light text-slate-300">→</span>
                   <span className="text-xs font-semibold px-2.5 py-1 rounded-lg border bg-blue-50 text-blue-700 border-blue-200">PostgreSQL</span>
                   <span className="text-sm font-light text-slate-300">→</span>
-                  <span className="text-xs font-semibold px-2.5 py-1 rounded-lg border bg-yellow-50 text-yellow-700 border-yellow-200">Power BI</span>
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-lg border bg-violet-50 text-violet-700 border-violet-200">Metabase</span>
                 </div>
               </div>
 
@@ -608,7 +608,7 @@ const AMEOS_DEMOS = [
   "Conception d'un pipeline ETL de bout en bout",
   "Modélisation d'une base analytique (PostgreSQL / Supabase)",
   "Structuration de règles métier complexes",
-  "Développement de 8 pages de dashboards Power BI",
+  "Migration du système BI : Power BI → Metabase (dashboards analytiques)",
   "Automatisation des flux de données via n8n",
   "Pilotage de la rentabilité et de la performance par collection",
 ];
@@ -622,7 +622,7 @@ const SOURCES = [
 const PIPELINE = [
   { label: 'n8n', sub: 'ETL & transformation JS', color: 'bg-orange-50 border-orange-200 text-orange-800' },
   { label: 'PostgreSQL / Supabase', sub: 'Entrepôt analytique', color: 'bg-blue-50 border-blue-200 text-blue-800' },
-  { label: 'Power BI', sub: 'Dashboards & KPI', color: 'bg-yellow-50 border-yellow-200 text-yellow-800' },
+  { label: 'Metabase', sub: 'Dashboards & KPI', color: 'bg-violet-50 border-violet-200 text-violet-800' },
 ];
 
 const DASHBOARD_PAGES = [
@@ -678,7 +678,7 @@ function AmeOSSection({ scrollTo }) {
           <span className="text-xs font-bold text-indigo-600 uppercase tracking-widest">Projet principal</span>
           <h2 className="text-3xl font-bold text-slate-900 mt-3 mb-2 tracking-tight">Projet Data &mdash; AmeOS (Data Warehouse &amp; BI)</h2>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">
-            Data warehouse, ETL pipeline et dashboards Power BI con&ccedil;us pour piloter la performance d&apos;une activit&eacute; e-commerce
+            Data warehouse, ETL pipeline et dashboards Metabase con&ccedil;us pour piloter la performance d&apos;une activit&eacute; e-commerce
           </p>
         </div>
 
@@ -693,7 +693,7 @@ function AmeOSSection({ scrollTo }) {
               Avant sa mise en place, les donn&eacute;es &eacute;taient dispers&eacute;es et difficiles &agrave; exploiter, rendant le pilotage de l&apos;activit&eacute; impr&eacute;cis. Il &eacute;tait difficile d&apos;avoir une vision fiable des ventes, des co&ucirc;ts, de la rentabilit&eacute; et de l&apos;impact des retours.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              J&apos;ai donc con&ccedil;u un syst&egrave;me data complet : centralisation des sources, transformation et structuration des donn&eacute;es, mod&eacute;lisation analytique et d&eacute;veloppement de dashboards Power BI.
+              J&apos;ai donc con&ccedil;u un syst&egrave;me data complet : centralisation des sources, transformation et structuration des donn&eacute;es, mod&eacute;lisation analytique et d&eacute;veloppement de dashboards &mdash; initialement sous Power BI, puis migr&eacute;s vers Metabase pour une meilleure accessibilit&eacute; et un partage simplifi&eacute;.
             </p>
             <p className="text-slate-600 leading-relaxed">
               L&apos;objectif : obtenir une vision claire, fiable et exploitable de la performance pour prendre de meilleures d&eacute;cisions business.
@@ -727,7 +727,7 @@ function AmeOSSection({ scrollTo }) {
               {[
                 { value: '→', label: 'Flux data automatisés' },
                 { value: '2', label: 'Shopify + données financières' },
-                { value: '8', label: 'pages Power BI' },
+                { value: '8', label: 'pages Metabase' },
                 { value: '6', label: 'vues SQL' },
               ].map((s) => (
                 <div
@@ -856,7 +856,7 @@ function AmeOSSection({ scrollTo }) {
             Structure du dashboard analytique
           </h3>
           <p className="text-slate-500 text-sm leading-relaxed mb-10 max-w-2xl">
-            Le syst&egrave;me alimente un dashboard Power BI structur&eacute; en 8 pages, permettant d&apos;analyser l&apos;activit&eacute; &agrave; diff&eacute;rents niveaux&nbsp;: global, par collection, par produit et par co&ucirc;t.
+            Le syst&egrave;me alimente un dashboard analytique <strong className="text-slate-700">Metabase</strong> structur&eacute; en plusieurs pages, permettant d&apos;analyser l&apos;activit&eacute; &agrave; diff&eacute;rents niveaux&nbsp;: global, par collection, par produit et par co&ucirc;t. Le syst&egrave;me a &eacute;t&eacute; initialement d&eacute;velopp&eacute; sous Power BI (8 pages) avant d&apos;&ecirc;tre migr&eacute; vers Metabase pour un acc&egrave;s web, un partage simplifi&eacute; et un rafra&icirc;chissement automatique des donn&eacute;es.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -937,6 +937,7 @@ const STACK = [
   { label: 'PostgreSQL' },
   { label: 'Supabase' },
   { label: 'Power BI' },
+  { label: 'Metabase' },
   { label: 'n8n' },
   { label: 'API REST' },
   { label: 'JavaScript' },
