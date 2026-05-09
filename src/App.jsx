@@ -598,7 +598,7 @@ function ModelingSection() {
             <div className="pt-4 border-t border-slate-100">
               <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Exemple concret</p>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Sur AmeOS, j&apos;ai con&ccedil;u plus de 20 tables structur&eacute;es avec des vues SQL avanc&eacute;es pour calculer la rentabilit&eacute; par collection, g&eacute;rer les retours et garantir la fiabilit&eacute; des indicateurs.
+                Sur AmeOS, j&apos;ai con&ccedil;u plus de 35 tables structur&eacute;es avec des vues SQL avanc&eacute;es pour calculer la rentabilit&eacute; par collection, g&eacute;rer les retours et garantir la fiabilit&eacute; des indicateurs.
               </p>
             </div>
           </div>
@@ -719,7 +719,7 @@ function AmeOSSection({ scrollTo }) {
             <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
               <p className="text-sm font-bold text-slate-900 mb-5">Ce que ce projet d&eacute;montre</p>
               <p className="text-xs text-slate-500 leading-relaxed mb-4 pb-4 border-b border-slate-100">
-                Plus de 20 tables structur&eacute;es, r&egrave;gles m&eacute;tier avanc&eacute;es et vues SQL pour le pilotage complet de l&apos;activit&eacute;.
+                Plus de 35 tables structur&eacute;es, r&egrave;gles m&eacute;tier avanc&eacute;es et vues SQL pour le pilotage complet de l&apos;activit&eacute;.
               </p>
               <ul className="space-y-3.5">
                 {AMEOS_DEMOS.map((item) => (
@@ -736,8 +736,8 @@ function AmeOSSection({ scrollTo }) {
             <div className="grid grid-cols-2 gap-3">
               {[
                 { value: '→', label: 'Flux data automatisés' },
-                { value: '2', label: 'Shopify + données financières' },
-                { value: '8', label: 'pages Metabase' },
+                { value: '3', label: 'sources de données' },
+                { value: '8', label: 'pages Power BI' },
                 { value: '6', label: 'vues SQL' },
               ].map((s) => (
                 <div
