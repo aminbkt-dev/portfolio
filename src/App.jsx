@@ -877,7 +877,7 @@ function AmeOSSection({ scrollTo }) {
             Structure du dashboard analytique
           </h3>
           <p className="text-slate-500 text-sm leading-relaxed mb-10 max-w-2xl">
-            J&apos;ai d&apos;abord con&ccedil;u un dashboard <strong className="text-slate-700">Power BI</strong> structur&eacute; en 8 pages, permettant d&apos;analyser l&apos;activit&eacute; &agrave; diff&eacute;rents niveaux&nbsp;: global, par collection, par produit et par co&ucirc;t. Ce syst&egrave;me m&apos;a permis de piloter concr&egrave;tement la performance &mdash; rentabilit&eacute;, co&ucirc;ts, retours &mdash; avec des indicateurs fiables et exploitables. J&apos;ai ensuite fait &eacute;voluer le syst&egrave;me vers <strong className="text-slate-700">Metabase</strong> pour un acc&egrave;s web, un partage simplifi&eacute; et un rafra&icirc;chissement automatique des donn&eacute;es.
+            J&apos;ai con&ccedil;u et exploit&eacute; ce syst&egrave;me de reporting sur deux outils BI compl&eacute;mentaires. <strong className="text-slate-700">Power BI</strong> &mdash; standard du march&eacute; enterprise &mdash; m&apos;a permis de piloter concr&egrave;tement la performance sur 8 pages analytiques&nbsp;: rentabilit&eacute;, co&ucirc;ts, retours, par collection et par produit. J&apos;ai &eacute;galement d&eacute;ploy&eacute; <strong className="text-slate-700">Metabase</strong> pour r&eacute;pondre &agrave; des besoins sp&eacute;cifiques&nbsp;: acc&egrave;s web, partage simplifi&eacute; et rafra&icirc;chissement automatique des donn&eacute;es, sans d&eacute;pendance &agrave; une licence ou un poste fixe.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
